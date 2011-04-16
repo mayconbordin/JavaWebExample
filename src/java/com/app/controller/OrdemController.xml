@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="ordem" namespace="/ordem" extends="struts-default">
+        <!-- Tiles -->
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+	</result-types>
+        
+        <!-- Index -->
+        <action name="index" method="index" class="com.app.controller.OrdemController">
+            <result name="ordemIndex" type="tiles">ordemIndex</result>
+	</action>
+
+        <action name="" method="index" class="com.app.controller.OrdemController">
+            <result name="success">/ordem/index.jsp</result>
+	</action>
+
+        <!-- Edit -->
+        <action name="edit" method="edit" class="com.app.controller.OrdemController">
+            <result name="success">/ordem/edit.jsp</result>
+            <result name="successSave" type="redirectAction">index?status=success</result>
+            <result name="error">/ordem/edit.jsp</result>
+            <result name="input">/ordem/edit.jsp</result>
+	</action>
+
+        <!-- Add -->
+        <action name="add" method="add" class="com.app.controller.OrdemController">
+            <result name="success">/ordem/add.jsp</result>
+            <result name="successSave" type="redirectAction">index?status=success</result>
+            <result name="error">/ordem/add.jsp</result>
+            <result name="input">/ordem/add.jsp</result>
+	</action>
+
+        <!-- Delete -->
+        <action name="delete" method="delete" class="com.app.controller.OrdemController">
+            
+	</action>
+
+    </package>
+</struts>
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="com.app.model.entity.Ordem" table="ordem">
+    <id column="codigo" name="codigo">
+      <generator class="sequence">
+        <param name="sequence">ordem_codigo_seq</param>
+      </generator>
+    </id>
+    <property column="cliente" length="80" name="cliente" not-null="true" type="string"/>
+    <property column="endereco" length="100" name="endereco" not-null="true" type="string"/>
+    <property column="descricao" name="descricao" not-null="true" type="string"/>
+    <property column="valormaoobra" name="valorMaoObra" not-null="true" type="double"/>
+    <property column="valormaterial" name="valorMaterial" not-null="true" type="double"/>
+    <property column="total" name="total" not-null="true" type="double"/>
+  </class>
+</hibernate-mapping>
