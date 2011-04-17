@@ -13,20 +13,20 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 
 ## Criando o banco de dados:
 
-    $ CREATE TABLE ordem(
-    $  codigo Serial NOT NULL,
-    $  cliente Character varying(80) NOT NULL,
-    $  endereco Character varying(100) NOT NULL,
-    $  descricao Text NOT NULL,
-    $  valorMaoObra Double precision NOT NULL,
-    $  valorMaterial Double precision NOT NULL,
-    $  total Double precision NOT NULL
-    $ )
-    $ WITH (OIDS=FALSE)
-    $ ;
-    $ 
-    $ ALTER TABLE ordem ADD CONSTRAINT pk_ordem PRIMARY KEY (codigo)
-    $ ;
+     CREATE TABLE ordem(
+      codigo Serial NOT NULL,
+      cliente Character varying(80) NOT NULL,
+      endereco Character varying(100) NOT NULL,
+      descricao Text NOT NULL,
+      valorMaoObra Double precision NOT NULL,
+      valorMaterial Double precision NOT NULL,
+      total Double precision NOT NULL
+     )
+     WITH (OIDS=FALSE)
+     ;
+     
+     ALTER TABLE ordem ADD CONSTRAINT pk_ordem PRIMARY KEY (codigo)
+     ;
 
 ## Bibliotecas necessárias
 
