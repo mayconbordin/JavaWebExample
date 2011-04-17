@@ -28,6 +28,11 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
      ALTER TABLE ordem ADD CONSTRAINT pk_ordem PRIMARY KEY (codigo)
      ;
 
+## Arquivos de Configuração
+
+- `/web/WEB-INF/web.xml`: arquivo principal de uma aplicação web, nele são decalarados os FilterDispatchers, Servlet Filters, e outras configurações da aplicação como tablibs e listeners.
+- `/web/WEB-INF/tiles.xml`: armazena as definições de templates do Tiles.
+
 ## Bibliotecas necessárias
 
     Persistence:
