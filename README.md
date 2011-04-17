@@ -31,7 +31,6 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 ## Bibliotecas necessárias
 
 - Persistence:
-	
 	`ejb3-persistence.jar`
 
 - Struts2-2.2.1.1-Basic:
