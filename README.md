@@ -18,8 +18,8 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
       cliente Character varying(80) NOT NULL,
       endereco Character varying(100) NOT NULL,
       descricao Text NOT NULL,
-      valorMaoObra Double precision NOT NULL,
-      valorMaterial Double precision NOT NULL,
+      valormaoobra Double precision NOT NULL,
+      valormaterial Double precision NOT NULL,
       total Double precision NOT NULL
      )
      WITH (OIDS=FALSE)
