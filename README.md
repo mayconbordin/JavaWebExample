@@ -31,9 +31,12 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 ## Bibliotecas necessárias
 
 - Persistence:
+
 	-ejb3-persistence.jar
 	
-- Struts2-2.2.1.1-Basic
+	
+- Struts2-2.2.1.1-Basic:
+
 	-commons-fileupload-1.2.1.jar
 	-commons-io-1.3.2.jar
 	-commons-logging-1.0.4.jar
@@ -42,7 +45,9 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 	-struts2-core-2.2.1.1.jar
 	-xwork-core-2.2.1.1.jar
 	
-- Hibernate-3.6.2
+	
+- Hibernate-3.6.2:
+
 	-antlr-2.7.6.jar
 	-c3p0-0.9.1.jar
 	-cglib-2.2.jar
@@ -60,7 +65,8 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 	-slf4j-api-1.6.1.jar
 	-swarmcache-1.0RC2.jar
 	
-- HibernateValidator-4.1.0
+- HibernateValidator-4.1.0:
+
 	-hibernate-jpa-2.0-api-1.0.0.Final.jar
 	-hibernate-validator-4.1.0.Final.jar
 	-log4j-1.2.14.jar
@@ -68,16 +74,20 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 	-slf4j-log4j12-1.5.6.jar
 	-validation-api-1.0.0.GA.jar
 	
-- HTMLCompressor-1.1
+- HTMLCompressor-1.1:
+
 	-htmlcompressor-1.1.jar
 	
-- PostgreSQL-8.4.702
+- PostgreSQL-8.4.702:
+
 	-postgresql-8.4-702.jdbc3.jar
 	
-- Struts2-jQuery-Plugin
+- Struts2-jQuery-Plugin:
+
 	-struts2-jquery-plugin-2.5.3.jar
 	
-- Tiles-2.2.2
+- Tiles-2.2.2:
+
 	-commons-beanutils-1.8.0.jar
 	-commons-digester-2.0.jar
 	-jcl-over-slf4j-1.5.8.jar
@@ -90,15 +100,17 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 	-tiles-servlet-2.2.2.jar
 	-tiles-template-2.2.2.jar
 	
-- ClosureCompiler
+- ClosureCompiler:
+
 	-compiler.jar
 	
-- YUICompressor-2.4.2
+- YUICompressor-2.4.2:
+
 	-jargs-1.0.jar
 	-rhino-1.6R7.jar
 	-yuicompressor-2.4.2.jar
 	
-###Onde econtrá-las:
+### Onde econtrá-las:
 http://struts.apache.org/
 http://www.hibernate.org/
 http://code.google.com/p/htmlcompressor/
