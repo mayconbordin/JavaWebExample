@@ -30,8 +30,11 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 
 ## Arquivos de Configuração
 
-- `/web/WEB-INF/web.xml`: arquivo principal de uma aplicação web, nele são decalarados os FilterDispatchers, Servlet Filters, e outras configurações da aplicação como tablibs e listeners.
+- `/web/WEB-INF/web.xml`: arquivo principal de uma aplicação web java, nele são decalarados os FilterDispatchers, Servlet Filters, e outras configurações da aplicação como tablibs e listeners.
 - `/web/WEB-INF/tiles.xml`: armazena as definições de templates do Tiles.
+- `/src/java/struts.xml`: neste arquivo ficam as configurações específicas do framework Struts. Nele são declaradas várias configurações do framework, detre estas a declaração das actions da aplicação, estas podendo estar em outros arquivos e incluídas neste.
+- `/src/java/hibernate.cfg.xml`: arquivo de configuração do ORM Hibernate. Define propriedades do framework e aspectos específicos do banco de dados utilizado, como usuário e senha, além dos arquivos de mapeamento de entidades.
+- `/src/java/log4j.properties`: arquivo de configuração do log4j.
 
 ## Bibliotecas necessárias
 
