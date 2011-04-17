@@ -4,7 +4,7 @@
 <%@taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles" %>
 <%@taglib uri="http://htmlcompressor.googlecode.com/taglib/compressor" prefix="compress" %>
 
-<compress:html enabled="true"
+<compress:html enabled="false"
                compressJavaScript="true"
                jsCompressor="closure"
                removeComments="true"
@@ -19,8 +19,11 @@
         <title><tiles:insertAttribute name="mainTitle" ignore="true" /> - <tiles:insertAttribute name="title" ignore="true" /></title>
 
         <!-- jQuery headers -->
-        <sj:head/>
+        <sj:head jqueryui="true" jquerytheme="ui-darkness" />
 
+        <style type="text/css">
+            .ui-widget { font-size: 10pt; }
+        </style>
     </head>
     <body>
         <tiles:insertAttribute name="body" />

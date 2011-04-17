@@ -4,8 +4,8 @@ import com.app.model.repository.OrdemRepository;
 import com.app.model.repository.OrdemRepositoryHibernate;
 import com.app.model.entity.Ordem;
 import com.app.util.repository.RepositoryException;
+import com.app.util.validator.Validator;
 import com.app.util.validator.ValidatorException;
-import com.app.util.validator.ValidatorImpl;
 import java.util.List;
 
 /**
@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class OrdemServiceImpl implements OrdemService {
     private OrdemRepository ordemRepository;
-    private ValidatorImpl validator;
+    private Validator validator;
 
     public OrdemServiceImpl() {}
 
@@ -66,9 +66,9 @@ public class OrdemServiceImpl implements OrdemService {
     /**
      * @return the validator
      */
-    public ValidatorImpl getValidator() {
+    public Validator getValidator() {
         if (validator == null) {
-            setValidator(new ValidatorImpl<Ordem>());
+            setValidator(new Validator<Ordem>());
         }
         return validator;
     }
@@ -76,7 +76,7 @@ public class OrdemServiceImpl implements OrdemService {
     /**
      * @param validator the validator to set
      */
-    public void setValidator(ValidatorImpl validator) {
+    public void setValidator(Validator validator) {
         this.validator = validator;
     }
 }

@@ -5,12 +5,29 @@
 
 <tiles-definitions>
     <definition name="baseLayout" template="/baseLayout.jsp">
-        <put-attribute name="mainTitle" value="Ordens CRUD"/>
+        <put-attribute name="mainTitle" value="Ordens de Serviço"/>
         <put-attribute name="title" value="Template"/>
     </definition>
 
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Página Inicial"/>
+        <put-attribute name="body"  value="/index.jsp"/>
+    </definition>
+
+    <!-- Start: Ordem -->
     <definition name="ordemIndex" extends="baseLayout">
-        <put-attribute name="title" value="Ordens"/>
+        <put-attribute name="title" value="Lista de Ordens"/>
         <put-attribute name="body"  value="/ordem/index.jsp"/>
     </definition>
+
+    <definition name="ordemAdd" extends="baseLayout">
+        <put-attribute name="title" value="Adicionar Ordem"/>
+        <put-attribute name="body"  value="/ordem/add.jsp"/>
+    </definition>
+
+    <definition name="ordemEdit" extends="baseLayout">
+        <put-attribute name="title" value="Editar Ordem"/>
+        <put-attribute name="body"  value="/ordem/edit.jsp"/>
+    </definition>
+    <!-- End: Ordem -->
 </tiles-definitions>

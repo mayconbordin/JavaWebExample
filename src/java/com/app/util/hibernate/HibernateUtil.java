@@ -10,9 +10,7 @@ import org.hibernate.exception.JDBCConnectionException;
 /**
  * Classe de utilidades com o Hibernate
  *
- * @author Maycon Bordin
- * @version 1.0
- * @created 04-out-2010 13:24:50
+ * @author maycon
  */
 public class HibernateUtil {
 

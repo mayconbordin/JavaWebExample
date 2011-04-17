@@ -3,6 +3,7 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
+    <!-- Configuração dos controladores -->
     <include file="com/app/controller/OrdemController.xml"/>
     <include file="com/app/controller/UserInfoController.xml"/>
 
@@ -15,7 +16,16 @@
     <!-- Arquivo global de propriedades -->
     <constant name="struts.custom.i18n.resources" value="global" />
     
-    <!-- Configuration for the default package. -->
+    <!-- Configuração do pacote principal -->
     <package name="default" extends="struts-default">
+        <!-- Tiles -->
+        <result-types>
+            <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+	</result-types>
+
+        <!-- Index -->
+        <action name="index" method="index" class="com.app.controller.IndexController">
+            <result name="success" type="tiles">index</result>
+	</action>
     </package>
 </struts>

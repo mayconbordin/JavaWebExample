@@ -7,9 +7,7 @@ import javax.validation.TraversableResolver;
 /**
  * TransversalResolver do validador
  *
- * @author Maycon Bordin
- * @version 1.0
- * @created 04-out-2010 13:24:50
+ * @author maycon
  */
 public class CustomTraversableResolver implements TraversableResolver {
 

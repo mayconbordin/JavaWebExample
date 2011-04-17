@@ -15,12 +15,9 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
 
 /**
- * Classe abstrata para classes DAO. Provê a session para
- * as operações com o Hibernate.
+ * Classe abstrata para Repositorios.
  *
- * @author Maycon Bordin
- * @version 1.0
- * @created 04-out-2010 13:24:50
+ * @author maycon
  */
 public class GenericRepositoryHibernate<T, ID extends Serializable> implements GenericRepository<T, ID> {
 

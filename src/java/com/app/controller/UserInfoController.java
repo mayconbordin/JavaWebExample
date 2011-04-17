@@ -13,11 +13,14 @@ public class UserInfoController extends Controller {
 
     private String browserName;
     private String osName;
+    private String ip;
 
     public String index() {
-        String userAgent = request.getHeader( "User-Agent" );
+        String userAgent = request.getHeader("User-Agent");
+
         browserName = UserAgentTools.getBrowser(userAgent)[1];
         osName = UserAgentTools.getOS(userAgent)[0];
+        setIp(request.getRemoteAddr());
         
         return SUCCESS;
     }
@@ -48,6 +51,20 @@ public class UserInfoController extends Controller {
      */
     public void setOsName(String osName) {
         this.osName = osName;
+    }
+
+    /**
+     * @return the ip
+     */
+    public String getIp() {
+        return ip;
+    }
+
+    /**
+     * @param ip the ip to set
+     */
+    public void setIp(String ip) {
+        this.ip = ip;
     }
 
 }

@@ -2,6 +2,8 @@ package com.app.util.controller;
 
 import com.app.util.validator.ValidatorException;
 import com.opensymphony.xwork2.ActionSupport;
+import com.opensymphony.xwork2.Preparable;
+import com.opensymphony.xwork2.interceptor.ParametersInterceptor;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,6 +25,16 @@ public class Controller extends ActionSupport implements ServletRequestAware {
     private String status;
 
     protected HttpServletRequest request;
+
+    public void statusHandler() {
+        if (status != null) {
+            String message = getText("status." + status);
+            List messages = new ArrayList();
+            messages.add(message);
+
+            setActionMessages(messages);
+        }
+    }
 
     public void errorHandler(Exception ex) {
         if (ex instanceof ValidatorException) {

@@ -14,7 +14,7 @@ import java.util.List;
  *
  * @author maycon
  */
-public class OrdemController extends Controller implements ModelDriven {
+public class OrdemController extends Controller implements ModelDriven<Ordem> {
 
     private OrdemService ordemService;
 
@@ -25,11 +25,13 @@ public class OrdemController extends Controller implements ModelDriven {
     public String index() {
         try {
             ordemList = getOrdemService().findAll("codigo", "asc");
-            return "ordemIndex";
         } catch (RepositoryException ex) {
             errorHandler(ex);
         }
-        return ERROR;
+
+        statusHandler();
+
+        return SUCCESS;
     }
 
     public String edit() {
@@ -39,7 +41,6 @@ public class OrdemController extends Controller implements ModelDriven {
                 return SUCCESS_SAVE;
             } else {
                 ordem = getOrdemService().findById(id);
-                return SUCCESS;
             }
         } catch (RepositoryException ex) {
             errorHandler(ex);
@@ -47,7 +48,7 @@ public class OrdemController extends Controller implements ModelDriven {
             errorHandler(ex);
         }
 
-        return ERROR;
+        return SUCCESS;
     }
 
     public String add() {
@@ -55,8 +56,6 @@ public class OrdemController extends Controller implements ModelDriven {
             if (isSave()) {
                 getOrdemService().save(ordem);
                 return SUCCESS_SAVE;
-            } else {
-                return SUCCESS;
             }
         } catch (RepositoryException ex) {
             errorHandler(ex);
@@ -64,7 +63,7 @@ public class OrdemController extends Controller implements ModelDriven {
             errorHandler(ex);
         }
 
-        return ERROR;
+        return SUCCESS;
     }
 
     public void delete() {
