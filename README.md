@@ -99,11 +99,11 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
     yuicompressor-2.4.2.jar
     
 ### Onde econtrá-las:
-http://struts.apache.org/
-http://www.hibernate.org/
-http://code.google.com/p/htmlcompressor/
-http://code.google.com/intl/pt-BR/closure/compiler/
-http://developer.yahoo.com/yui/compressor/
-http://jdbc.postgresql.org/
-http://code.google.com/p/struts2-jquery/
-http://tiles.apache.org/
+* [Struts](http://struts.apache.org/)
+* [Hibernate](http://www.hibernate.org/)
+* [HTML Compressor](http://code.google.com/p/htmlcompressor/)
+* [Closure Compiler](http://code.google.com/intl/pt-BR/closure/compiler/)
+* [YUI Compressor](http://developer.yahoo.com/yui/compressor/)
+* [PostgreSQL JDBC](http://jdbc.postgresql.org/)
+* [Struts2 jQuery Plugin](http://code.google.com/p/struts2-jquery/)
+* [Tiles](http://tiles.apache.org/)
