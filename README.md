@@ -6,7 +6,7 @@ Aplicação de testes em Java para Web utilizando as seguintes tecnologias:
 - Hibernate 3.6.2
 - Hibernate Validator 4.1.0
 - Tiles 2.2.2
-- HTML Compressor + Closure Compiler + YUICompressor
+- HTML Compressor 1.1 + Closure Compiler + YUICompressor 2.4.2
 - PostgreSQL 8.4
 
 Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
@@ -117,7 +117,7 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 * [Struts](http://struts.apache.org/)
 * [Hibernate](http://www.hibernate.org/)
 * [HTML Compressor](http://code.google.com/p/htmlcompressor/)
-* [Closure Compiler](http://code.google.com/intl/pt-BR/closure/compiler/)
+* [Closure Compiler](http://code.google.com/p/closure-compiler/)
 * [YUI Compressor](http://developer.yahoo.com/yui/compressor/)
 * [PostgreSQL JDBC](http://jdbc.postgresql.org/)
 * [Struts2 jQuery Plugin](http://code.google.com/p/struts2-jquery/)
