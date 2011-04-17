@@ -30,9 +30,18 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 
 ## Bibliotecas necessárias
 
-    **Persistence**
+    Persistence:
     ejb3-persistence.jar
     commons-fileupload-1.2.1.jar
+    
+    Struts2-2.2.1.1-Basic:
+    commons-fileupload-1.2.1.jar
+    commons-io-1.3.2.jar
+    commons-logging-1.0.4.jar
+    freemarker-2.3.16.jar
+    ognl-3.0.jar
+    struts2-core-2.2.1.1.jar
+    xwork-core-2.2.1.1.jar
 
 - Persistence:
 
