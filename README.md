@@ -1,37 +1,34 @@
-#JavaWebExample
+# JavaWebExample
 
->Aplicação de testes em Java para Web utilizando as seguintes tecnologias:
->- Struts 2.1.1.1
->- Hibernate 3.6.2
->- Hibernate Validator 4.1.0
->- Tiles 2.2.2
->- HTML Compressor + Closure Compiler + YUICompressor
->- PostgreSQL 8.4
->
->Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
+Aplicação de testes em Java para Web utilizando as seguintes tecnologias:
 
-================================================================================
-##Criando o banco de dados:
+- Struts 2.1.1.1
+- Hibernate 3.6.2
+- Hibernate Validator 4.1.0
+- Tiles 2.2.2
+- HTML Compressor + Closure Compiler + YUICompressor
+- PostgreSQL 8.4
 
+Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 
-`CREATE TABLE ordem(
- codigo Serial NOT NULL,
- cliente Character varying(80) NOT NULL,
- endereco Character varying(100) NOT NULL,
- descricao Text NOT NULL,
- valorMaoObra Double precision NOT NULL,
- valorMaterial Double precision NOT NULL,
- total Double precision NOT NULL
-)
-WITH (OIDS=FALSE)
-;
+## Criando o banco de dados:
 
-ALTER TABLE ordem ADD CONSTRAINT pk_ordem PRIMARY KEY (codigo)
-;
-`
+    $ CREATE TABLE ordem(
+    $  codigo Serial NOT NULL,
+    $  cliente Character varying(80) NOT NULL,
+    $  endereco Character varying(100) NOT NULL,
+    $  descricao Text NOT NULL,
+    $  valorMaoObra Double precision NOT NULL,
+    $  valorMaterial Double precision NOT NULL,
+    $  total Double precision NOT NULL
+    $ )
+    $ WITH (OIDS=FALSE)
+    $ ;
+    $ 
+    $ ALTER TABLE ordem ADD CONSTRAINT pk_ordem PRIMARY KEY (codigo)
+    $ ;
 
-================================================================================
-##Bibliotecas necessárias
+## Bibliotecas necessárias
 
 - Persistence:
 	-ejb3-persistence.jar
