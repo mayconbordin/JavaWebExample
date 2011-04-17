@@ -36,6 +36,13 @@ Desenvolvido com NetBeans 6.9.1 e implantado em servidor Apache Tomcat 6.0.26.
 - `/src/java/hibernate.cfg.xml`: arquivo de configuração do ORM Hibernate. Define propriedades do framework e aspectos específicos do banco de dados utilizado, como usuário e senha, além dos arquivos de mapeamento de entidades.
 - `/src/java/log4j.properties`: arquivo de configuração do log4j.
 
+## Outros Arquivos
+
+- `/src/java/global.properties`: arquivo global de configurações, pode ser acessado por qualquer action ou página `.jsp`.
+- `/src/java/ValidationMessages.properties`: arquivo com as mensagens dos constraints do Hibernate Validator.
+- `/src/java/com/app/controller/NomeDoController.properties`: nesse arquivo podem ser armazenadas mensagens ou qualquer outra informação que poderá ser usada pelas actions deste controlador ou pelas páginas JSP relacionadas.
+- `/src/java/com/app/controller/NomeDoController.xml`: declaração das actions contidas em um controlador, este arquivo precisa ser incluído no `struts.xml`.
+
 ## Bibliotecas necessárias
 
     Persistence:
